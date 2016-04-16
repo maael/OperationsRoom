@@ -1,0 +1,16 @@
+{
+  "projectName": "OperationsRoom",
+  "database": {
+    "connections": {
+      "operationsRoomMongo": {
+        "adapter": "mongo",
+        "host": "localhost",
+        "port": 27017,
+        "database": "operations-room",
+        "wlNext": {
+          "caseSensitive": false
+        }
+      }
+    }
+  }
+}
