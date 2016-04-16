@@ -1,4 +1,4 @@
-import createLogger from '../lib/logger'
+import createLogger from '../lib/middleware/logger'
 const express = require('express')
 export const router = express.Router()
 

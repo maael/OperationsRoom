@@ -1,4 +1,4 @@
-import createLogger from '../lib/logger'
+import createLogger from '../lib/middleware/logger'
 import initializeDatabase from '../lib/database'
 import projectController from './components/project/controller'
 import githubController from './components/github/controller'
