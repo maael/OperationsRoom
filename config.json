@@ -1,5 +1,6 @@
 {
-  "projectName": "OperationsRoom",
+  "projectName": "Operations Room",
+  "secret": "cheesecakeisfantastic",
   "database": {
     "connections": {
       "operationsRoomMongo": {

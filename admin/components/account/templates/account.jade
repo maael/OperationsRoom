@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    title #{config.projectName}
+    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css')
+    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css')
+    style.
+      body { padding-top:80px; word-wrap:break-word; }
+  body
+    .container
+      .page-header.text-center
+        h1
+          span.fa.fa-anchor
+          |  Account Page
+        a.btn.btn-default.btn-sm(href='/admin/logout') Logout
+      .row
+        .col-sm-3.col-md-2.sidebar
+          ul.nav.nav-sidebar
+            li.active
+              a(href='/admin/account') Account
+          ul.nav.nav-sidebar
+            li
+              a(href='/admin/projects/add') Add project
+        .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
+          .input-group
+            span#basic-addon1.input-group-addon
+              span.fa.fa-github
+            input.form-control(type='text', aria-describedby='basic-addon1', value= user.name, readonly)
+            span.input-group-btn
+              button.btn.btn-danger(type='button') Revoke

@@ -2,7 +2,7 @@ import IndexView from './views/index'
 export default function indexController (router) {
   router.get('/', (req, res) => {
     let view = new IndexView()
-    res.send(view.render())
+    view.render().then(view.send(res))
   })
 
   router.get('/welcome', (req, res) => {

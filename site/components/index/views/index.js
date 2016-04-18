@@ -1,4 +1,4 @@
-import View from '../../../lib/View'
+import View from '../../../../lib/View'
 
 export default class IndexView extends View {
   constructor () {

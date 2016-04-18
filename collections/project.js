@@ -4,6 +4,7 @@ const Project = Waterline.Collection.extend({
 , connection: 'operationsRoomMongo'
 , attributes: {
     name: 'string'
+  , github: 'json'
   }
 })
 export default Project

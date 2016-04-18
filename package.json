@@ -4,8 +4,8 @@
   "description": "A site to manage deployments",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js --exec babel-node -e js,jade",
-    "build": "babel lib -d dist",
+    "start": "nodemon app.js | ./node_modules/.bin/bunyan",
+    "build": "./node_modules/.bin/babel lib -d dist",
     "serve": "node dist/app.js",
     "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/mocha -- -R spec --compilers js:babel-register"
   },
@@ -19,10 +19,14 @@
   "dependencies": {
     "body-parser": "^1.15.0",
     "bunyan": "^1.8.0",
+    "cookie-parser": "^1.4.1",
     "express": "^4.13.4",
+    "express-session": "^1.13.0",
     "method-override": "^2.3.5",
+    "node-fetch": "^1.5.1",
+    "passport": "^0.3.2",
+    "passport-github": "^1.1.0",
     "pug": "^2.0.0-alpha3",
-    "request": "^2.71.0",
     "sails-mongo": "^0.12.0",
     "waterline": "^0.12.1"
   },
